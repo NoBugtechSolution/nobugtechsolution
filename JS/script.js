@@ -37,10 +37,9 @@ function content(page,object) {
             document.getElementById("content-body").innerHTML = this.responseText;
             if(page=="Home"){//Home Page doesn't need footer
                 document.getElementById("main-footer").style.display="None";
-                document.getElementById("content-body").style.height="90%";
-                attachScrollListener();
                 laptop_write()
                 code_write()
+                AssignObservers()
             }else{
                 document.getElementById("main-footer").style.display="flex";
                 document.getElementById("content-body").style.height="85%";
@@ -118,36 +117,40 @@ function startCooldown() {
 var scrollTimeout;
 var prevScrollPos = 0;
 data=0
-function attachScrollListener() {
-    var homeElement = document.getElementById("the-home");
-    if (homeElement) {
-        homeElement.addEventListener("scroll", function(event) {
-            event.preventDefault(); 
-            var currentScrollPos = this.scrollTop;
-            var scrollDirection = currentScrollPos > prevScrollPos ? 0 : 1;
-            prevScrollPos = currentScrollPos;
-            if(data==0){
-                scroller(scrollDirection,1)
-                data=1;
-                setTimeout(function() {
-                   data=0
-                }, 900);
+
+
+function AssignObservers(){
+    const objects = [];
+    objects[0] = document.getElementById('feabox');
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('open');
             }
+            else{
+                
+                entry.target.classList.remove('open');
             
+            }
         });
-    }
+    });
+
+    objects.forEach(element => {
+        if (element) {
+            observer.observe(element);
+        }
+    });
 }
 
 
+
+
 function scroller(way,object) {
-    feat=document.getElementById("feabox")
     const mainContainer = document.getElementById('the-home');
     if(way==0){
-            feat.classList.add("open")
         child = mainContainer.lastElementChild;
     }
     else{
-            feat.classList.remove("open")
         child = mainContainer.firstElementChild;
     }
     if(object==0){
@@ -185,11 +188,12 @@ function feature_select(object,nav){
     select_int.style.backgroundColor="#0fd6e3";
     firstchild = mainContainer.children[0];
     child = mainContainer.children[selected_feature];
-    offset=child.offsetTop-firstchild.offsetTop;
+    const offset = child.offsetLeft - firstchild.offsetLeft;
+
     mainContainer.scrollTo({
         behavior: 'smooth',
-        top: offset 
-      });
+        left: offset
+    });
 }
 
 
