@@ -7,108 +7,114 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   <style>
     body {
-      background-color: black;
+      background-color: white;
+      color: #512DA7;
     }
-    .font {
+    .font_1 {
       font-family: Comic Sans MS, cursive;
-      color: #03979C;
+      color: white;
+      font-size: 20px;
     }
-    #heading
-    {
-        margin-left: -150px;
+    #heading {
+      text-align: center;
+      margin: 30px 0;
+      font-size: 20px;
     }
     .parallelogram {
-      height: 200px;
-      width: 170px;
-      background-color: #03979C;
-      position: relative;
+      height: 150px;
+      width: 130px;
+      background-color: white;
       transform: skewX(-14deg);
-      border: 3px solid #fff;
+      border: 3px solid black;
       border-radius: 10%;
-      box-shadow: 8px 8px 0px 0px #024245;
-      margin-top: 50px;
-      /* Reduce margins for closer spacing */
-      margin: 20px 10px;  /* Adjust as needed for desired spacing */
-    }
-    .employee-info1 {
-      color: #fff;
-      margin-top: 10px;
-      /* Flexbox for vertical centering */
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      margin-left: -100px;
+      box-shadow: 6px 6px 0px 0px #024245;
+      margin: 0 auto;
+      color: white;
     }
     .employee-info {
-      color: #fff;
-      margin-top: 10px;
-      /* Flexbox for vertical centering */
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      margin-left: -190px;
+      margin-top: 15px;
+      text-align: center;
     }
-    @media (min-width: 992px) {
+    .team-member {
+      margin-bottom: 40px;
+    }
+    @media (max-width: 576px) {
       .parallelogram {
-        height: 200px;
+        height: 120px;
+        width: 100px;
+      }
+      .font_1 {
+        font-size: 20px;
+      }
+    }
+    @media (min-width: 768px) {
+      .parallelogram {
+        height: 180px;
+        width: 150px;
+      }
+      .font_1 {
+        font-size: 20px;
       }
     }
   </style>
 </head>
-<h1 class="font" id="heading">MEET OUR TEAM</h1>
-<body class="container">
-  <div class="row justify-content-center">
-    <div class="col-lg-3">
-      <div class="parallelogram"></div>
-      <div class="text-center employee-info1">
-        <h5 class="font">VISHAL V NAIR</h5>
-        <p class="font">TEAM LEADER/FOUNDER</p>
+<body>
+  
+  <div class="container">
+    <h1 class="font_1" id="heading">MEET OUR TEAM</h1>
+    <div class="row justify-content-center">
+      <!-- Row 1 -->
+      <div class="col-sm-6 col-md-4 col-lg-3 team-member">
+        <div class="parallelogram"></div>
+        <div class="employee-info">
+          <h5 class="font_1">VISHAL V NAIR</h5>
+          <p class="font_1">TEAM LEADER/FOUNDER</p>
+        </div>
+      </div>
+      <div class="col-sm-6 col-md-4 col-lg-3 team-member">
+        <div class="parallelogram"></div>
+        <div class="employee-info">
+          <h5 class="font_1">SETHU S NAIR</h5>
+          <p class="font_1">SENIOR DEVELOPER</p>
+        </div>
+      </div>
+      <div class="col-sm-6 col-md-4 col-lg-3 team-member">
+        <div class="parallelogram"></div>
+        <div class="employee-info">
+          <h5 class="font_1">ROBIN P DANIEL</h5>
+          <p class="font_1">SENIOR DEVELOPER</p>
+        </div>
+      </div>
+      <div class="col-sm-6 col-md-4 col-lg-3 team-member">
+        <div class="parallelogram"></div>
+        <div class="employee-info">
+          <h5 class="font_1">ABHIN M</h5>
+          <p class="font_1">SENIOR DEVELOPER</p>
+        </div>
       </div>
     </div>
-    <div class="col-lg-3">
-      <div class="parallelogram"></div>
-      <div class="text-center employee-info1">
-        <h5 class="font">SETHU S NAIR</h5>
-        <p class="font">SENIOR DEVELOPER</p>
+    <div class="row justify-content-center">
+      <!-- Row 2 -->
+      <div class="col-sm-6 col-md-4 col-lg-3 team-member">
+        <div class="parallelogram"></div>
+        <div class="employee-info">
+          <h5 class="font_1">ADARSH P S</h5>
+          <p class="font_1">DEVELOPER</p>
+        </div>
       </div>
-    </div>
-    <div class="col-lg-3">
-      <div class="parallelogram"></div>
-      <div class="text-center employee-info1">
-        <h5 class="font">ROBIN P DANIEL</h5>
-        <p class="font">SENIOR DEVELOPER</p>
+      <div class="col-sm-6 col-md-4 col-lg-3 team-member">
+        <div class="parallelogram"></div>
+        <div class="employee-info">
+          <h5 class="font_1">HARIJITH PRASATH</h5>
+          <p class="font_1">DEVELOPER</p>
+        </div>
       </div>
-    </div>
-    <div class="col-lg-3">
-      <div class="parallelogram"></div>
-      <div class="text-center employee-info1">
-        <h5 class="font">ABHIN M</h5>
-        <p class="font">SENIOR DEVELOPER</p>
-      </div>
-    </div>
-  </div>
-  <div class="row justify-content-center">
-    <div class="col-lg-4">
-      <div class="parallelogram"></div>
-      <div class="text-center employee-info">
-        <h5 class="font">ADARSH P S</h5>
-        <p class="font">DEVELOPER</p>
-      </div>
-    </div>
-    <div class="col-lg-4">
-      <div class="parallelogram"></div>
-      <div class="text-center employee-info">
-        <h5 class="font">HARIJITH PRASATH</h5>
-        <p class="font">DEVELOPER</p>
-      </div>
-    </div>
-    <div class="col-lg-4">
-      <div class="parallelogram"></div>
-      <div class="text-center employee-info">
-        <h5 class="font">SHIBIN SHAJI</h5>
-        <p class="font">DEVELOPER</p>
+      <div class="col-sm-6 col-md-4 col-lg-3 team-member">
+        <div class="parallelogram"></div>
+        <div class="employee-info">
+          <h5 class="font_1">SHIBIN SHAJI</h5>
+          <p class="font_1">DEVELOPER</p>
+        </div>
       </div>
     </div>
   </div>
