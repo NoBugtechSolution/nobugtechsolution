@@ -13,7 +13,8 @@ We are a dynamic team of tech enthusiasts passionate about creating exceptional 
   - Robin P Daniel ([GitHub](https://github.com/))
   
 - **Coders**: [List of coders here]
-
+  - Abhin M ([GitHub](https://github.com/mrabhin03))
+  - VISHAL V NAIR ([GitHub](https://github.com/vishalvnair124))
 - **Code Management**
   - VISHAL V NAIR ([GitHub](https://github.com/vishalvnair124))
 
