@@ -14,6 +14,7 @@ We are a dynamic team of tech enthusiasts passionate about creating exceptional 
   
 - **Coders**: [List of coders here]
   - Abhin M ([GitHub](https://github.com/mrabhin03))
+  - Sethu s nair ([GitHub](https://github.com/Sethusnair))
   - VISHAL V NAIR ([GitHub](https://github.com/vishalvnair124))
 - **Code Management**
   - VISHAL V NAIR ([GitHub](https://github.com/vishalvnair124))
