@@ -1,191 +1,104 @@
-<div class="main-projects">
-  <div class="timeline">
-    <div class="outer">
-      <div class="card">
-        <div class="info">
-          <h3 class="title">Title 1</h3>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat.
-          </p>
+
+<head>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Rubik&display=swap" rel="stylesheet"> 
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css" rel="stylesheet">
+    <link href="../Assets/css/ServiceStyle.css" rel="stylesheet">
+</head>
+
+<div style="background: linear-gradient(to bottom, #300A94, #07044E); width: 100%;">
+    
+    <div class="page-header container-fluid bg-primary d-flex flex-column align-items-center justify-content-center">
+        <h1 class="display-3 text-uppercase mb-3">Our Projects</h1>
+        <div class="d-inline-flex text-white">
+            <h6 class="text-uppercase m-0"><a class="text-white" href="">Home</a></h6>
+            <h6 class="m-0 px-3">/</h6>
+            <h6 class="text-uppercase m-0">Projects</h6>
         </div>
-      </div>
-      <div class="card">
-        <div class="info">
-          <h3 class="title">Title 2</h3>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat.
-          </p>
-        </div>
-      </div>
-      <div class="card">
-        <div class="info">
-          <h3 class="title">Title 3</h3>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat.
-          </p>
-        </div>
-      </div>
-      <div class="card">
-        <div class="info">
-          <h3 class="title">Title 4</h3>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat.
-          </p>
-        </div>
-      </div>
-      <div class="card">
-        <div class="info">
-          <h3 class="title">Title 5</h3>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat.
-          </p>
-        </div>
-      </div>
     </div>
-  </div>
+    
+
+    <div class="container-fluid py-5">
+        <div class="container pt-5 pb-3">
+            <h1 class="display-4 text-uppercase text-center mb-5" style="color: white;">Visit Our Projects</h1>
+            <div class="row">
+                <div class="col-12 text-center mb-2">
+                    <ul class="list-inline mb-4" id="portfolio-flters" style="color: white;">
+                        <li class="btn btn-outline-dark text-uppercase py-2 px-4 active" data-filter="*">
+                            <i class="fa fa-star text-primary mr-2"></i>All
+                        </li>
+                        <li class="btn btn-outline-dark text-uppercase py-2 px-4" data-filter=".first">
+                            <i class="fa fa-laptop-code text-primary mr-2"></i>Design
+                        </li>
+                        <li class="btn btn-outline-dark text-uppercase py-2 px-4" data-filter=".second">
+                            <i class="fa fa-mobile-alt text-primary mr-2"></i>Development
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row portfolio-container">
+                <div class="col-lg-4 col-md-6 mb-4 portfolio-item first">
+                    <div class="position-relative rounded overflow-hidden mb-2">
+                        <img class="img-fluid w-100" src="../Assets/img/portfolio-1.jpg" alt="">
+                        <div class="portfolio-btn d-flex align-items-center justify-content-center">
+                            <a href="../Assets/img/portfolio-1.jpg" data-lightbox="portfolio">
+                                <i class="fa fa-4x fa-plus text-primary"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4 portfolio-item second">
+                    <div class="position-relative rounded overflow-hidden mb-2">
+                        <img class="img-fluid w-100" src="../Assets/img/portfolio-2.jpg" alt="">
+                        <div class="portfolio-btn d-flex align-items-center justify-content-center">
+                            <a href="../Assets/img/portfolio-2.jpg" data-lightbox="portfolio">
+                                <i class="fa fa-4x fa-plus text-primary"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4 portfolio-item first">
+                    <div class="position-relative rounded overflow-hidden mb-2">
+                        <img class="img-fluid w-100" src="../Assets/img/portfolio-3.jpg" alt="">
+                        <div class="portfolio-btn d-flex align-items-center justify-content-center">
+                            <a href="../Assets/img/portfolio-3.jpg" data-lightbox="portfolio">
+                                <i class="fa fa-4x fa-plus text-primary"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4 portfolio-item second">
+                    <div class="position-relative rounded overflow-hidden mb-2">
+                        <img class="img-fluid w-100" src="../Assets/img/portfolio-4.jpg" alt="">
+                        <div class="portfolio-btn d-flex align-items-center justify-content-center">
+                            <a href="../Assets/img/portfolio-4.jpg" data-lightbox="portfolio">
+                                <i class="fa fa-4x fa-plus text-primary"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4 portfolio-item first">
+                    <div class="position-relative rounded overflow-hidden mb-2">
+                        <img class="img-fluid w-100" src="../Assets/img/portfolio-5.jpg" alt="">
+                        <div class="portfolio-btn d-flex align-items-center justify-content-center">
+                            <a href="../Assets/img/portfolio-3.jpg" data-lightbox="portfolio">
+                                <i class="fa fa-4x fa-plus text-primary"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4 portfolio-item second">
+                    <div class="position-relative rounded overflow-hidden mb-2">
+                        <img class="img-fluid w-100" src="../Assets/img/portfolio-6.jpg" alt="">
+                        <div class="portfolio-btn d-flex align-items-center justify-content-center">
+                            <a href="../Assets/img/portfolio-4.jpg" data-lightbox="portfolio">
+                                <i class="fa fa-4x fa-plus text-primary"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../Assets/js/main.js"></script>
 </div>
-
-<style>
-  :root {
-    --primary-color: #0000007b;
-    --background-color: #00000000;
-    --font: sans-serif;
-  }
-
-  /* Timeline Container */
-  .timeline {
-    overflow-y: auto;
-    background: var(--primary-color);
-    margin: auto;
-    padding: 20px;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-  }
-
-  .main-projects {
-    height: 100%;
-    width: 100%;
-    overflow-y: auto;
-    background: var(--background-color);
-    font-family: var(--font);
-    display: flex;
-    justify-content: center;
-  }
-  /* Card container */
-  .card {
-    position: relative;
-    left: 20%;
-    max-width: 60%;
-  }
-
-  /* setting padding based on even or odd */
-  .card:nth-child(odd) {
-    padding: 30px 0 30px 30px;
-  }
-  .card:nth-child(even) {
-    padding: 30px 30px 30px 0;
-  }
-  /* Global ::before */
-  .card::before {
-    content: "";
-    position: absolute;
-    width: 50%;
-    border: solid aqua;
-  }
-
-  /* Setting the border of top, bottom, left */
-  .card:nth-child(odd)::before {
-    left: 0px;
-    top: -4.5px;
-    bottom: -4.5px;
-    border-width: 5px 0 5px 5px;
-    border-radius: 50px 0 0 50px;
-  }
-
-  /* Setting the border of top, bottom, right */
-  .card:nth-child(even)::before {
-    right: 0;
-    top: 0;
-    bottom: 0;
-    border-width: 5px 5px 5px 0;
-    border-radius: 0 50px 50px 0;
-  }
-
-  /* Removing the border if it is the first card */
-  .card:first-child::before {
-    border-top: 0;
-    border-top-left-radius: 0;
-  }
-
-  /* Removing the border if it is the last card  and it's odd */
-  .card:last-child:nth-child(odd)::before {
-    border-bottom: 0;
-    border-bottom-left-radius: 0;
-  }
-
-  /* Removing the border if it is the last card  and it's even */
-  .card:last-child:nth-child(even)::before {
-    border-bottom: 0;
-    border-bottom-right-radius: 0;
-  }
-
-  /* Information about the timeline */
-  .info {
-    display: flex;
-    flex-direction: column;
-    background: #333;
-    color: gray;
-    font-size: 25px;
-    border-radius: 10px;
-    padding: 10px;
-  }
-
-  /* Title of the card */
-  .title {
-    color: aqua;
-    position: relative;
-  }
-
-  /* Timeline dot  */
-  .title::before {
-    content: "";
-    position: absolute;
-    width: 10px;
-    height: 10px;
-    background: white;
-    border-radius: 999px;
-    border: 3px solid aqua;
-  }
-
-  /* text right if the card is even  */
-  .card:nth-child(even) > .info > .title {
-    text-align: right;
-  }
-
-  /* setting dot to the left if the card is odd */
-  .card:nth-child(odd) > .info > .title::before {
-    left: -45px;
-  }
-
-  /* setting dot to the right if the card is odd */
-  .card:nth-child(even) > .info > .title::before {
-    right: -45px;
-  }
-</style>

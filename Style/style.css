@@ -85,9 +85,6 @@ body {
 #content-body {
     display: grid;
     place-items: center;
-    font-size: 50px;
-    /* height: 100%;
-    width: 100%; */
     color: white;
     background-color: #512DA7;
     overflow-y: auto;
@@ -101,7 +98,7 @@ body {
     align-items: center;
     justify-content: space-around;
     flex-direction: column;
-    height: 5%;
+    height: 0%;
     width: 100%;
     color: white;
     font-size: 10px;
