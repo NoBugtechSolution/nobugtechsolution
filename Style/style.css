@@ -985,7 +985,7 @@ body {
         margin-top: 0px;
         width: 45vh;
         display: grid;
-        grid-template-columns: repeat(3,1fr);
+        grid-template-columns: repeat(3, 1fr);
         overflow-x: scroll;
         scroll-snap-type: x mandatory;
         overflow-y: hidden !important;
