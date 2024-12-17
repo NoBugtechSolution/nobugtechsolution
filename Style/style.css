@@ -814,7 +814,6 @@ body {
 .main-contact>div:first-child>h2 {
     font-size: 60px;
 }
-
 .contact-us {
     z-index: 5;
     color: black;
@@ -881,7 +880,17 @@ body {
 
 
 
-
+@media (max-width:960px) {
+    .main-contact{
+        flex-direction: column;
+    }
+    .main-contact >div{
+        width: 100%;
+    }
+    .contact-us {
+        width: 98%;
+    }
+}
 @media (max-width: 1200px) {
     #main-header>div:first-child {
         display: flex;
