@@ -40,7 +40,7 @@
             itemSelector: '.portfolio-item',
             layoutMode: 'fitRows',
             fitRows: {
-                gutter: -50
+                gutter: -55
             }
         });
     },400)
