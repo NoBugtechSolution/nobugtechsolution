@@ -880,10 +880,11 @@ body {
 
 
 
-
 @media (max-width:960px) {
     .main-contact{
         flex-direction: column;
+        justify-content: start;
+        gap: 30px;
     }
     .main-contact >div{
         width: 100%;
@@ -891,7 +892,23 @@ body {
     .contact-us {
         width: 98%;
     }
-}
+    .main-contact>div:first-child>h2,
+    .main-contact>div:first-child>h5 {
+        margin: 0;
+        font-size: 14px;
+    }
+
+    .main-contact>div:first-child>h2 {
+        font-size: 35px;
+    }
+    .main-contact>div:first-child {
+        padding: 10px;
+        height: fit-content;
+    }
+    .main-contact>div:last-child {
+        height: fit-content;
+    }
+    }
 @media (max-width: 1200px) {
     #main-header>div:first-child {
         display: flex;
