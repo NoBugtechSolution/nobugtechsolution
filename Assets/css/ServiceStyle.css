@@ -36,7 +36,7 @@
   box-sizing: border-box;
 }
 ::-webkit-scrollbar{
-  width: 10px;
+  width: 6px;
 }
 ::-webkit-scrollbar-thumb {
   border-radius: .1rem;
@@ -49,7 +49,7 @@
 }
 
 ::-webkit-scrollbar-track {
-  background: #dbdbdb;
+  background: #00000010;
 }
 .service-item p{
   color: black;
@@ -628,6 +628,15 @@ mark,
 .Project-Details > div:last-child{
   font-size: 14px;
 }
+@media (max-width: 576px) {
+  .Project-Details > div:first-child{
+    font-size: 15px;
+    font-weight: 800;
+  }
+  .Project-Details > div:last-child{
+    font-size: 10px;
+  }
+}
 .img-fluid2 {
   width: 98%;
   object-fit: cover;
@@ -709,6 +718,10 @@ pre code {
   padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
+}
+.container-fluid,.container{
+  padding: 0 6px;
+  overflow-x: hidden;
 }
 
 @media (min-width: 576px) {
@@ -10102,7 +10115,7 @@ h6,
   height: 0;
   top: 50%;
   left: 50%;
-  background: rgba(34, 36, 41, 0.5);
+  background: rgba(34, 36, 41, 0.1);
   border: 1px solid transparent;
   border-radius: 4px;
   opacity: 0;
@@ -10115,7 +10128,7 @@ h6,
   height: 100%;
   top: 0;
   left: 0;
-  border: 30px solid rgba(34, 36, 41, 0.9);
+  /* border: 30px solid rgba(34, 36, 41, 0.9); */
 }
 
 .portfolio-item i {
