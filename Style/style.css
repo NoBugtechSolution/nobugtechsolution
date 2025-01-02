@@ -1014,7 +1014,7 @@ body {
         width: 45vh;
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        overflow-x: scroll;
+        overflow-x: hidden;
         scroll-snap-type: x mandatory;
         overflow-y: hidden !important;
     }
