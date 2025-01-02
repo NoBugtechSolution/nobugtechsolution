@@ -33,26 +33,28 @@
     });
 
 
-    // Portfolio isotope and filter
-    var portfolioIsotope;
-    setTimeout(()=>{
-        portfolioIsotope = $('.portfolio-container').isotope({
-            itemSelector: '.portfolio-item',
-            layoutMode: 'fitRows',
-            fitRows: {
-                gutter: -55
-            }
-        });
-    },400)
     
+    // var portfolioIsotope;
+    //     portfolioIsotope = $('.portfolio-container').isotope({
+    //         transitionDuration: '0.8s', 
+    //         layoutMode: 'fitRows'
+    //     });
     $('#portfolio-flters li').on('click', function () {
-        
         $("#portfolio-flters li").removeClass('active');
         $(this).addClass('active');
-
-        portfolioIsotope.isotope({filter: $(this).data('filter')});
     });
 
+    var mixer = mixitup('.portfolio-container', {
+        selectors: {
+            target: '.portfolio-item'
+        },
+        animation: {
+            duration: 300
+        }
+    });
+    
+
+    
 
     // Team carousel
     $(".team-carousel").owlCarousel({

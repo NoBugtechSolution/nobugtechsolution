@@ -617,12 +617,9 @@ mark,
   height: fit-content; 
   padding: 10px;
   width: 100%; 
-  background-color: #43268b;
+  background-color: #00000021;
   border-bottom-left-radius: 15px;
   border-bottom-right-radius: 15px;
-}
-.portfolio-container{
-  /* background-color: red; */
 }
 .Project-Details > div:first-child{
   font-size: 20px;
