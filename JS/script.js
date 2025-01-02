@@ -3,7 +3,7 @@ function header() {
     xhttp.onreadystatechange = function() {
         if (this.readyState == 4 && this.status == 200) {
             document.getElementById("main-header").innerHTML = this.responseText;
-            content("about",document.getElementById('home_page'))   
+            content("Home",document.getElementById('home_page'))   
         }
     };
     xhttp.open("GET", "Common/Header.html", true);
