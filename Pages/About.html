@@ -14,72 +14,93 @@
         color: #512da7;
       }
       .font_1 {
-        font-family: Comic Sans MS, cursive;
+        font-family: "Rubik", sans-serif;
         color: white;
-        font-size: 20px;
+        font-size: 17px;
       }
       #heading {
         text-align: center;
         margin: 30px 0;
-        font-size: 20px;
+        font-size: 23px;
       }
       .parallelogram {
-        height: 150px;
-        width: 130px;
+        height: 190px;
+        width: 160px;
         background-color: white;
-        transform: skewX(-14deg);
-        border: 3px solid black;
+        transform: skewX(-14deg) translateX(0px);
+        border: 5px solid rgb(0, 0, 0);
         border-radius: 10%;
-        box-shadow: 6px 6px 0px 0px #024245;
+        box-shadow: 6px 6px 0px 0px #111111;
         margin: 0 auto;
         color: white;
+        overflow: hidden;
       }
       .employee-info {
         margin-top: 15px;
+        transform: translateX(-20px);
         text-align: center;
       }
       .team-member {
         margin-bottom: 40px;
       }
+      .aboutTop{
+        font-size: 13px;
+        padding: 8px 10px;
+        max-width: 1200px;
+      }
+      h6{
+        font-size: 30px;
+      }
+      .Team-Image{
+        height: 100%;
+        /* opacity: .3; */
+        transform: skewX(14deg) translate(-15px,0px) scale(1.1);
+      }
+      .employee-info >p{
+        font-size: 15px;
+      }
       @media (max-width: 576px) {
+        .employee-info {
+          transform: translateX(-10px);
+        }
         .parallelogram {
-          height: 120px;
-          width: 100px;
+          transform: skewX(-14deg) translateX(0px);
         }
         .font_1 {
-          font-size: 20px;
+          font-size: 15px;
+        }
+        .aboutTop{
+          font-size: 11px;
+          /* padding: 8px; */
+        }
+        h6{
+          font-size: 23px;
         }
       }
       @media (min-width: 768px) {
         .parallelogram {
-          height: 180px;
-          width: 150px;
+          
+          height: 200px;
+          width: 170px;
         }
         .font_1 {
           font-size: 20px;
         }
+        .aboutTop{
+          font-size: 17px;
+        }
       }
-      .maintenance{
-      width: 100vw;   
-      height: 92vh;
-      top:5vh;
-      -webkit-text-stroke: .2px black;
-      font-weight: 900;
-      display: grid;
-      transform: rotate(-25deg);
-      place-content: center;
-      font-size: 35px;
-      position: fixed;
-      z-index: 5;
-      pointer-events: none;
-  }
+      h5{
+        font-weight: 600;
+        margin-bottom: .2rem;
+      }
+
+      
     </style>
   </head>
   <body>
-    <div class="maintenance">
-      UnderMaintenance
-    </div>
     <div class="aboutTop">
+      <h6>About Us</h6>
       At NoBugTech Solution, we are a passionate team of innovators, creators,
       and problem-solvers dedicated to empowering businesses through
       cutting-edge technology. From ideation to execution, we specialize in
@@ -101,28 +122,36 @@
       <div class="row justify-content-center">
         <!-- Row 1 -->
         <div class="col-sm-6 col-md-4 col-lg-3 team-member">
-          <div class="parallelogram"></div>
+          <div class="parallelogram">
+            <img src="../Assets/img/Team/" class="Team-Image" alt="">
+          </div>
           <div class="employee-info">
             <h5 class="font_1">VISHAL V NAIR</h5>
-            <p class="font_1">FOUNDER|TEAM LEAD</p>
+            <p class="font_1">FOUNDER | TEAM LEAD</p>
           </div>
         </div>
         <div class="col-sm-6 col-md-4 col-lg-3 team-member">
-          <div class="parallelogram"></div>
+          <div class="parallelogram">
+            <img src="../Assets/img/Team/" class="Team-Image" alt="">
+          </div>
           <div class="employee-info">
             <h5 class="font_1">SETHU S NAIR</h5>
             <p class="font_1">DEVELOPER</p>
           </div>
         </div>
         <div class="col-sm-6 col-md-4 col-lg-3 team-member">
-          <div class="parallelogram"></div>
+          <div class="parallelogram">
+            <img src="../Assets/img/Team/Abhin.jpg" class="Team-Image" alt="">
+          </div>
           <div class="employee-info">
             <h5 class="font_1">ABHIN M</h5>
-            <p class="font_1">DEVELOPER|DESIGNER</p>
+            <p class="font_1">DEVELOPER | DESIGNER</p>
           </div>
         </div>
         <div class="col-sm-6 col-md-4 col-lg-3 team-member">
-          <div class="parallelogram"></div>
+          <div class="parallelogram">
+            <img src="../Assets/img/Team/" class="Team-Image" alt="">
+          </div>
           <div class="employee-info">
             <h5 class="font_1">ROBIN P DANIEL</h5>
             <p class="font_1">DESIGNER</p>
@@ -132,28 +161,36 @@
       <div class="row justify-content-center">
         <!-- Row 2 -->
         <div class="col-sm-6 col-md-4 col-lg-3 team-member">
-          <div class="parallelogram"></div>
+          <div class="parallelogram">
+            <img src="../Assets/img/Team/" class="Team-Image" alt="">
+          </div>
           <div class="employee-info">
             <h5 class="font_1">ABHI BINU</h5>
             <p class="font_1">DEVELOPER</p>
           </div>
         </div>
         <div class="col-sm-6 col-md-4 col-lg-3 team-member">
-          <div class="parallelogram"></div>
+          <div class="parallelogram">
+            <img src="../Assets/img/Team/" class="Team-Image" alt="">
+          </div>
           <div class="employee-info">
             <h5 class="font_1">ANANDHU V NAIR</h5>
             <p class="font_1">DEVELOPER</p>
           </div>
         </div>
         <div class="col-sm-6 col-md-4 col-lg-3 team-member">
-          <div class="parallelogram"></div>
+          <div class="parallelogram">
+            <img src="../Assets/img/Team/" class="Team-Image" alt="">
+          </div>
           <div class="employee-info">
             <h5 class="font_1">ADARSH P S</h5>
             <p class="font_1">TESTER</p>
           </div>
         </div>
         <div class="col-sm-6 col-md-4 col-lg-3 team-member">
-          <div class="parallelogram"></div>
+          <div class="parallelogram">
+            <img src="../Assets/img/Team/" class="Team-Image" alt="">
+          </div>
           <div class="employee-info">
             <h5 class="font_1">HARIJITH PRASATH</h5>
             <p class="font_1">TESTER</p>
