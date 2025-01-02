@@ -3,7 +3,7 @@ function header() {
     xhttp.onreadystatechange = function() {
         if (this.readyState == 4 && this.status == 200) {
             document.getElementById("main-header").innerHTML = this.responseText;
-            content("Home",document.getElementById('home_page'))   
+            content("about",document.getElementById('home_page'))   
         }
     };
     xhttp.open("GET", "Common/Header.html", true);
@@ -70,6 +70,25 @@ function open_nav(){
         icon.setAttribute("name", "close-sharp");
     }
 }
+document.addEventListener("click", function (event) {
+    const nav = document.getElementById("nav");
+    const icon = document.getElementById("menu_icon");
+    if (!nav.contains(event.target) && !icon.contains(event.target)) {
+      if (nav.classList.contains("open")) {
+        nav.classList.remove("open");
+        icon.setAttribute("name", "menu-outline");
+      }
+    }
+  });
+
+  window.addEventListener("scroll", function () {
+    const nav = document.getElementById("nav");
+    const icon = document.getElementById("menu_icon");
+    if (nav.classList.contains("open")) {
+      nav.classList.remove("open");
+      icon.setAttribute("name", "menu-outline");
+    }
+  });
 
 function  code_write(){
     if(home==true){

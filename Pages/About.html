@@ -24,10 +24,9 @@
         font-size: 23px;
       }
       .parallelogram {
-        height: 190px;
-        width: 160px;
+        height: 250px;
+        width: 250px;
         background-color: rgb(0, 0, 0);
-        transform: skewX(-14deg) translateX(0px);
         border: 5px solid rgb(0, 0, 0);
         border-radius: 10%;
         box-shadow: 6px 6px 0px 0px #111111;
@@ -37,7 +36,6 @@
       }
       .employee-info {
         margin-top: 15px;
-        transform: translateX(-20px);
         text-align: center;
       }
       .team-member {
@@ -59,21 +57,11 @@
       .Team-Image{
         height: 100%;
         /* opacity: .3; */
-        transform: skewX(14deg) translate(-15px,0px) scale(1.1);
       }
       .employee-info >p{
         font-size: 15px;
       }
       @media (max-width: 576px) {
-        .team-member{
-          transform: scale(1.02);
-        }
-        .employee-info {
-          transform: translateX(-10px);
-        }
-        .parallelogram {
-          transform: skewX(-14deg) translateX(0px);
-        }
         .font_1 {
           font-size: 15px;
         }
@@ -87,11 +75,6 @@
         }
       }
       @media (min-width: 768px) {
-        .parallelogram {
-          
-          height: 200px;
-          width: 170px;
-        }
         .font_1 {
           font-size: 20px;
         }
@@ -102,6 +85,12 @@
       h5{
         font-weight: 600;
         margin-bottom: .2rem;
+      }
+      .container{
+        max-width: 1140px;
+      }
+      .row{
+        gap: 10px;
       }
 
       
@@ -159,7 +148,7 @@
         </div>
         <div class="col-sm-6 col-md-4 col-lg-3 team-member">
           <div class="parallelogram">
-            <img style="transform:  skewX(14deg) translate(-19px,0px) scale(1.1)" src="Images/Team/Abi.jpg" class="Team-Image" alt="">
+            <img  src="Images/Team/Abi.jpg" class="Team-Image" alt="">
           </div>
           <div class="employee-info">
             <h5 class="font_1">ABHI BINU</h5>
@@ -190,7 +179,7 @@
         </div>
         <div class="col-sm-6 col-md-4 col-lg-3 team-member">
           <div class="parallelogram">
-            <img style="transform:  skewX(14deg) translate(2px,20px) scale(1.25); width: 100%; height: auto;" src="Images/Team/Adarsh.jpg" class="Team-Image" alt="">
+            <img  src="Images/Team/Adarsh.jpg" class="Team-Image" alt="">
           </div>
           <div class="employee-info">
             <h5 class="font_1">ADARSH P S</h5>
@@ -199,7 +188,7 @@
         </div>
         <div class="col-sm-6 col-md-4 col-lg-3 team-member">
           <div class="parallelogram">
-            <img style="transform:  skewX(14deg) translate(2px,20px) scale(1.25); width: 100%; height: auto;" src="Images/Team/Harijith.jpg" class="Team-Image" alt="">
+            <img  src="Images/Team/Harijith.jpg" class="Team-Image" alt="">
           </div>
           <div class="employee-info">
             <h5 class="font_1">HARIJITH PRASATH</h5>
