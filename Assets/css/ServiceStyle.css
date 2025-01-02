@@ -626,17 +626,17 @@ mark,
   font-weight: 800;
 }
 .Project-Details > div:last-child{
-  font-size: 14px;
+  font-size: 12px;
 }
-@media (max-width: 576px) {
+/* @media (max-width: 576px) {
   .Project-Details > div:first-child{
-    font-size: 15px;
+    font-size: 18px;
     font-weight: 800;
   }
   .Project-Details > div:last-child{
-    font-size: 10px;
+    font-size: 13px;
   }
-}
+} */
 .img-fluid2 {
   width: 98%;
   object-fit: cover;
